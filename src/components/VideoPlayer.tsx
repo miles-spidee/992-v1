@@ -1,5 +1,3 @@
-import React from 'react';
-
 const VideoPlayer = ({ src }: { src: string }) => (
   <video
     className="video-background"
