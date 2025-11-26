@@ -2,3 +2,7 @@ div.bg {
     height: 100vh;
     background-color: black;
 }
+
+div * {
+    color: white;
+}
