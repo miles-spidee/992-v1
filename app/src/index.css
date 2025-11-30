@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+/* Ensure consistent box-sizing for all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Optional: Uncomment border for debugging */
+/* * {
+  border: 0.7px red solid;
+} */
+
+/* --- LENIS GLOBAL CSS --- */
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* -----------------------------
+   FONTS: Local Porsche Style
+------------------------------ */
+
+/* PorscheLike font (911 Porscha style) */
+@font-face {
+  font-family: "PorscheLike";
+  src: url("/fonts/911porscha/911porschav3.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Boldonse – used for highlighted text (“Born for”, “Built for”, etc.) */
+@font-face {
+  font-family: "boldonse";
+  src: url("/fonts/Boldonse/Boldonse-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Calligraphic font (Calligraffitti) */
+@font-face {
+  font-family: "calli";
+  src: url("/fonts/Calligraffitti/Calligraffitti-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Optional second Porsche font (you had defined Porsche3D but no file) 
+   Add file later if needed. */
+@font-face {
+  font-family: "Porsche3D";
+  src: local("Porsche3D"); /* Add file later */
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "marker";
+  src: url("/fonts/Permanent_Marker/PermanentMarker-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* -----------------------------
+   CUSTOM FONT UTILITIES
+------------------------------ */
+
+.font-porsche { 
+  font-family: "Porsche3D", "PorscheLike", ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-boldonse { 
+  font-family: "boldonse", "PorscheLike", ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-calli { 
+  font-family: "calli", "PorscheLike", ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-marker { 
+  font-family: "marker", ui-sans-serif, system-ui, sans-serif;
+}
+

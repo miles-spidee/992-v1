@@ -1,0 +1,17 @@
+.latest-products {
+    position: relative;
+    overflow: hidden;
+}
+
+.latest-products img {
+    transition: transform 0.5s ease-in-out;
+}
+
+.latest-products button {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.latest-products button:hover {
+    background-color: #4a4a4a;
+}
